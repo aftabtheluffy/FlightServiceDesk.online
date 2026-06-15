@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright & Disclaimer | FlightServiceDesk</title>
+    <meta name="description" content="Copyright notice and disclaimer for FlightServiceDesk.online — an independent flight booking assistance service.">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --dark: #0f172a;
+            --dark-mid: #1e293b;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-body: #475569;
+            --border: #e2e8f0;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg);
+            color: var(--text-body);
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* ── Header ── */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-mid) 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo svg {
+            width: 24px;
+            height: 24px;
+            color: var(--primary);
+        }
+
+        .logo span {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-light);
+            letter-spacing: -0.02em;
+        }
+
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .header-phone svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ── Hero Banner ── */
+        .page-hero {
+            background: linear-gradient(135deg, var(--dark) 0%, #1a3a5c 100%);
+            padding: 56px 24px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(14, 165, 233, 0.12) 0%, transparent 60%),
+                        radial-gradient(ellipse at 70% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 60%);
+        }
+
+        .page-hero-inner {
+            position: relative;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(14, 165, 233, 0.15);
+            border: 1px solid rgba(14, 165, 233, 0.3);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 9999px;
+            margin-bottom: 20px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(26px, 5vw, 38px);
+            font-weight: 800;
+            color: var(--text-light);
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .page-hero p {
+            color: #94a3b8;
+            font-size: 15px;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        /* ── Layout ── */
+        .page-wrap {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        /* ── Last Updated Bar ── */
+        .last-updated {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 18px;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+        }
+
+        .last-updated svg {
+            width: 15px;
+            height: 15px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        /* ── Sections ── */
+        .section {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 32px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.12), rgba(37, 99, 235, 0.12));
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .section-icon svg {
+            width: 18px;
+            height: 18px;
+            color: var(--primary);
+        }
+
+        .section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        .section-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .section p {
+            color: var(--text-body);
+            font-size: 14.5px;
+            line-height: 1.75;
+            margin-bottom: 12px;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section ul {
+            list-style: none;
+            margin: 10px 0 12px;
+        }
+
+        .section ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 14.5px;
+            color: var(--text-body);
+            padding: 6px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .section ul li:last-child {
+            border-bottom: none;
+        }
+
+        .section ul li::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--primary);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border: 1px solid #bae6fd;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #0c4a6e;
+            line-height: 1.65;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #fffbeb, #fef3c7);
+            border: 1px solid #fde68a;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #78350f;
+            line-height: 1.65;
+        }
+
+        /* ── Copyright Banner ── */
+        .copyright-banner {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--dark-mid) 100%);
+            border-radius: 14px;
+            padding: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .copyright-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(14, 165, 233, 0.08) 0%, transparent 70%);
+        }
+
+        .copyright-banner .year {
+            font-size: 48px;
+            font-weight: 900;
+            color: rgba(14, 165, 233, 0.15);
+            position: absolute;
+            right: 24px;
+            bottom: -8px;
+            letter-spacing: -4px;
+            line-height: 1;
+            user-select: none;
+        }
+
+        .copyright-banner .copy-symbol {
+            font-size: 40px;
+            color: var(--primary);
+            font-weight: 300;
+            margin-bottom: 12px;
+            display: block;
+            position: relative;
+        }
+
+        .copyright-banner h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .copyright-banner p {
+            color: #94a3b8;
+            font-size: 14px;
+            position: relative;
+        }
+
+        /* ── Contact Box ── */
+        .contact-box {
+            background: linear-gradient(135deg, var(--primary) 0%, #2563eb 100%);
+            border-radius: 14px;
+            padding: 32px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-box h3 {
+            color: white;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: var(--dark);
+            font-size: 18px;
+            font-weight: 800;
+            padding: 14px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+            letter-spacing: -0.02em;
+        }
+
+        .contact-phone:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+        }
+
+        .contact-phone svg {
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+        }
+
+        /* ── Footer ── */
+        footer {
+            background: var(--dark);
+            padding: 24px;
+            text-align: center;
+        }
+
+        footer p {
+            color: #475569;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        footer a {
+            color: #64748b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--primary);
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 6px 0;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .section {
+                padding: 22px 18px;
+            }
+
+            .copyright-banner {
+                padding: 24px 18px;
+            }
+
+            .copyright-banner .year {
+                font-size: 36px;
+                right: 16px;
+            }
+
+            .contact-box {
+                padding: 24px 18px;
+            }
+
+            .contact-phone {
+                font-size: 16px;
+                padding: 12px 24px;
+            }
+
+            .header-phone span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <a href="https://flightservicedesk.online/" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 4s-2 1-3.5 2.5L11 10l-8.2-1.8c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12.5l-2.5 2.5L5 14l-1.5 1.5L6 18l2.5-2.5L12.5 9l1.8 7.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1Z"/>
+                </svg>
+                <span>FlightServiceDesk</span>
+            </a>
+            <a href="tel:+18662277851" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>(866) 227-7851</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <div class="page-hero">
+        <div class="page-hero-inner">
+            <span class="hero-badge">Legal Information</span>
+            <h1>Copyright &amp; Disclaimer</h1>
+            <p>Important information about FlightServiceDesk.online, our services, and how we operate as an independent booking assistance provider.</p>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="page-wrap">
+
+        <div class="last-updated">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Last Updated: June 15, 2026 &nbsp;&bull;&nbsp; Effective Date: January 1, 2026
+        </div>
+
+        <!-- Copyright Banner -->
+        <div class="copyright-banner">
+            <span class="copy-symbol">&copy;</span>
+            <h2>Copyright 2026 FlightServiceDesk</h2>
+            <p>All content, design, and materials on this website are the exclusive property of FlightServiceDesk.</p>
+            <span class="year">2026</span>
+        </div>
+
+        <!-- Copyright Notice -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><path d="M14.31 8l.96 1.5A5 5 0 1 1 9.73 8H14.31z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Copyright Notice</h2>
+                    <span class="section-sub">Ownership of Content</span>
+                </div>
+            </div>
+            <p>All content published on <strong>FlightServiceDesk.online</strong> — including but not limited to text, graphics, logos, button icons, images, data compilations, and software — is the property of FlightServiceDesk and is protected by applicable United States and international copyright laws.</p>
+            <p>Unauthorized reproduction, distribution, modification, or republication of any material from this website, in whole or in part, without the express written permission of FlightServiceDesk, is strictly prohibited and may result in civil or criminal penalties.</p>
+            <ul>
+                <li>All written copy and marketing materials are original works owned by FlightServiceDesk.</li>
+                <li>The FlightServiceDesk name, logo, and brand identity are proprietary.</li>
+                <li>No content from this site may be scraped, copied, or used for commercial purposes without authorization.</li>
+            </ul>
+        </div>
+
+        <!-- Independent Service Disclaimer -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Independent Service Disclaimer</h2>
+                    <span class="section-sub">Not Affiliated with Any Airline</span>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <strong>Important Notice:</strong> FlightServiceDesk.online is an independent third-party flight booking assistance service. We are NOT affiliated with, endorsed by, or officially connected to any airline, airline alliance, or airline reservation system, including but not limited to American Airlines, Delta Air Lines, United Airlines, Southwest Airlines, Spirit Airlines, Frontier Airlines, Alaska Airlines, JetBlue Airways, or any other carrier.
+            </div>
+
+            <p>When you contact us via our advertised phone number, you are reaching FlightServiceDesk — an independent travel assistance company. Our agents are not employees of any airline and do not represent any airline's official customer service department.</p>
+            <p>Service fees may apply for booking assistance provided by FlightServiceDesk. You may be able to book directly through an airline's official website or by contacting the airline directly at no additional service charge.</p>
+        </div>
+
+        <!-- Advertising Disclosure -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Advertising Disclosure</h2>
+                    <span class="section-sub">Google Ads &amp; Paid Search</span>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                This website and our phone number may be promoted through paid advertising programs, including Google Search Ads and Google Call Ads. Clicking our advertisement or calling our number connects you to FlightServiceDesk, not to an airline directly.
+            </div>
+
+            <p>Our advertisements are clearly identified as ads within search engine results pages. FlightServiceDesk complies with all applicable Google Advertising policies, including those related to call-only ads, search ads, and destination URL requirements.</p>
+            <ul>
+                <li>We are a paid advertiser on Google Search and other platforms.</li>
+                <li>Our ads are designed to help customers find booking assistance quickly.</li>
+                <li>All ad content accurately represents our independent booking service.</li>
+                <li>We do not misrepresent our affiliation with any airline in our advertising.</li>
+            </ul>
+        </div>
+
+        <!-- Trademark Notice -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Trademark Disclaimer</h2>
+                    <span class="section-sub">Third-Party Brand References</span>
+                </div>
+            </div>
+            <p>All airline names, logos, trademarks, and service marks referenced on this website are the property of their respective owners. Any mention of a third-party airline or travel brand on this site is for descriptive and informational purposes only and does not imply any affiliation, sponsorship, or endorsement.</p>
+            <p>FlightServiceDesk does not claim any rights to any airline's trademarks and uses such references solely to indicate the type of booking assistance services we can help customers with.</p>
+        </div>
+
+        <!-- Limitation of Liability -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Limitation of Liability</h2>
+                    <span class="section-sub">Accuracy &amp; Responsibility</span>
+                </div>
+            </div>
+            <p>FlightServiceDesk makes reasonable efforts to provide accurate flight availability information, pricing guidance, and booking assistance. However, we make no warranties or representations — express or implied — regarding the completeness, accuracy, reliability, or suitability of any information on this website.</p>
+            <p>Flight prices, availability, schedules, and policies are subject to change without notice and are ultimately determined by the airlines. FlightServiceDesk is not responsible for:</p>
+            <ul>
+                <li>Changes to flight schedules, prices, or availability made by airlines.</li>
+                <li>Cancellations, delays, or service interruptions caused by airlines or third parties.</li>
+                <li>Errors in information provided by airlines or other third-party data sources.</li>
+                <li>Any direct, indirect, incidental, or consequential damages arising from use of this site.</li>
+            </ul>
+        </div>
+
+        <!-- Governing Law -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Governing Law &amp; Jurisdiction</h2>
+                    <span class="section-sub">Legal Framework</span>
+                </div>
+            </div>
+            <p>This copyright notice and disclaimer are governed by and construed in accordance with the laws of the State of New York, United States of America, without regard to its conflict of law provisions.</p>
+            <p>Any disputes arising from your use of this website or our services shall be subject to the exclusive jurisdiction of the courts located in New York County, New York.</p>
+            <p>Our registered business address is: <strong>1270 6th Ave #15th, New York, NY 10020, United States.</strong></p>
+        </div>
+
+        <!-- Changes to Disclaimer -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="1,4 1,10 7,10"/><path d="M3.51 15a9 9 0 1 0 .49-4.92"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Updates to This Disclaimer</h2>
+                    <span class="section-sub">Policy Changes</span>
+                </div>
+            </div>
+            <p>FlightServiceDesk reserves the right to update, modify, or replace any part of this copyright notice and disclaimer at any time without prior notice. Changes become effective immediately upon posting to this page.</p>
+            <p>Your continued use of this website after any changes constitutes your acceptance of the updated disclaimer. We encourage you to review this page periodically.</p>
+        </div>
+
+        <!-- Contact CTA -->
+        <div class="contact-box">
+            <h3>Questions? We're Here to Help.</h3>
+            <p>Speak with our travel experts 24 hours a day, 7 days a week.</p>
+            <a href="tel:+18662277851" class="contact-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                (866) 227-7851
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 FlightServiceDesk &mdash; All Rights Reserved</p>
+        <div class="divider" style="max-width:400px;margin:12px auto;"></div>
+        <p>
+            1270 6th Ave #15th, New York, NY 10020, United States
+            &nbsp;&bull;&nbsp;
+            <a href="https://flightservicedesk.online/">flightservicedesk.online</a>
+        </p>
+        <p style="margin-top:8px;">
+            FlightServiceDesk is an independent booking assistance service and is not affiliated with any airline.
+        </p>
+    </footer>
+
+</body>
+</html>
